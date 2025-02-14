@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💌 Carta para Ti 💌</title>
+    <title>Heart Letter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="envelope">
-            <div class="flap"></div> <!-- Solapa del sobre -->
+    <div class="envlope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
             <div class="letter">
-                <p>💌 Te quiero muchísimo 💖</p>
+                <div class="words line1"></div>
+                <div class="words line2"></div>
+                <div class="words line3"></div>
+                <div class="words line4"></div>
+                <p id="message"></p> <!-- Agregado para el mensaje personalizado -->
             </div>
-        </div>
-
-        <div class="buttons">
-            <button id="openLetter">Abrir sobre</button>
-            <button id="closeLetter">Cerrar sobre</button>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
         </div>
     </div>
 
-    <div id="hearts-container"></div> <!-- Contenedor de corazones flotantes -->
+    <div class="reset">
+        <button id="open">Open</button>
+        <button id="reset">Reset</button>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
